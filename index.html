@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+  <meta charset = "UTF-8">
+  <meta content = "width=device-width, initial-scale=1.0"
+        name = "viewport">
+  <meta content = "ie=edge" http-equiv = "X-UA-Compatible">
+  <link rel = "stylesheet" href = "assets/css/normalize.css">
+  <link rel = "stylesheet" href = "assets/css/style.css">
+  <title>codeR</title>
+</head>
+<body>
+<section>
+  <div class = "section">
+    <div class = "headSection">
+      <h3 class = "h3 textCenter">Регистрация</h3>
+      <p class = "textHead textCenter">участие в конференции бесплатное</p>
+    </div>
+    <form>
+      <div class = "sectionForm">
+        <div class = "dashedStart textCenter">
+          <input class = "button btnTypeReg textCenter" type = "button" value = "Студент"><input
+          class = "button btnTypeReg textCenter" type = "button" value = "Специалист">
+        </div>
+        <div class = "form">
+          <div class = "imgGlass textCenter"><img src = "assets/image/glass.png" alt = "glass">
+          </div>
+          <div class = "formBody">
+            <div class = "rowForm">
+              <div class = "colForm">
+                <div class = "textForm">
+                  <label for = "surName">Фамилия</label><input type = "text"
+                                                               id = "surName"
+                                                               class = "textInput"
+                                                               size = "15">
+                </div>
+                <div class = "textForm">
+                  <label for = "name">Имя</label><input type = "text"
+                                                        id = "name"
+                                                        class = "textInput"
+                                                        size = "15">
+                </div>
+                <div class = "textForm">
+                  <label for = "patronymic">Отчество</label><input type = "text"
+                                                                   id = "patronymic"
+                                                                   class = "textInput"
+                                                                   size = "15">
+                </div>
+                <div class = "textForm">
+                  <label for = "birthDay">Дата рождения</label><input type = "text"
+                                                                      id = "birthDay"
+                                                                      class = "textInput"
+                                                                      size = "15">
+                </div>
+              </div>
+              <div class = "colForm">
+                <div class = "textForm">
+                  <label for = "tel">Телефон</label><input type = "tel"
+                                                           id = "tel"
+                                                           class = "textInput"
+                                                           size = "15"
+                                                           placeholder = "+7(___)__-__-__">
+                </div>
+                <div class = "textForm">
+                  <label for = "email">E-mail</label><input type = "email"
+                                                            id = "email"
+                                                            class = "textInput"
+                                                            size = "15">
+                </div>
+                <div class = "textForm">
+                  <label for = "city">Город</label><input type = "text"
+                                                          id = "city"
+                                                          class = "textInput"
+                                                          size = "15">
+                </div>
+                <div class = "textForm">
+                  <label for = "company">Компания</label><input type = "text"
+                                                                id = "company"
+                                                                class = "textInput"
+                                                                size = "15">
+                </div>
+              </div>
+            </div>
+            <p class = "textInForm textCenter">Есть ли у вас опыт работы в IT?</p>
+            <div class = "checkForm">
+              <div class = "radio_input"><input type = "radio"
+                                                class = "radio"
+                                                name = "skill"
+                                                id = "skill1"
+                                                value = "от года и более"
+              /><label for = "skill1">Да, от года и более</label>
+              </div>
+              <div class = "radio_input"><input type = "radio"
+                                                class = "radio"
+                                                name = "skill"
+                                                id = "skill2"
+                                                value = "до года"
+              /><label for = "skill2">Да, до года</label></div>
+              <div class = "radio_input"><input type = "radio"
+                                                class = "radio"
+                                                name = "skill"
+                                                id = "skill3"
+                                                value = "Я учусь"
+              /><label for = "skill3">Я учусь</label></div>
+              <div class = "radio_input"><input type = "radio"
+                                                class = "radio"
+                                                name = "skill"
+                                                id = "skill4"
+                                                value = "Решал задачи в ходе обучения"
+              /><label for = "skill4">Решал задачи в ходе обучения, но нет реального опыта</label>
+              </div>
+              <div class = "radio_input"><input type = "radio"
+                                                class = "radio"
+                                                name = "skill"
+                                                id = "skill5"
+                                                value = "Нет"
+              /><label for = "skill5">Нет</label></div>
+              <div class = "radio_input"><input type = "radio"
+                                                class = "radio"
+                                                name = "skill"
+                                                id = "skill6"
+                                                value = "я знаю Java C++ python"
+              /><label for = "skill6">Нет опыта. Но я знаю Java, C++, python</label></div>
+            </div>
+          </div>
+          <div class = "terms">
+            <div class = "radio_input"><input type = "checkbox"
+                                              class = "radio"
+                                              name = "terms"
+                                              id = "terms"
+            /><label for = "terms">Принимаю пользовательское соглашение</label>
+            </div>
+          </div>
+          <div class = "textCenter">
+            <button class = "button btnReg textCenter">Зарегистрироваться</button>
+          </div>
+        </div>
+    </form>
+  </div>
+</section>
+</body>
+</html>

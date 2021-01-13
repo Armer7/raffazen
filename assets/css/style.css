@@ -5,6 +5,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ocrf-regularcregular';
+  src: url('../fonts/ocrf-regularc_regular-webfont.woff2') format('woff2'),
+  url('../fonts/ocrf-regularc_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* todo TOP css */
 
 * {
@@ -14,7 +22,7 @@
 }
 
 body {
-  font-family: "OCRF-RegularC", Roboto, sans-serif;
+  font-family: "OCRF-RegularC", "ocrf-regularcregular", Roboto, sans-serif;
   font-size: 24px;
   background-color: #ececec;
 }
@@ -181,7 +189,7 @@ body {
 
 /* todo RADIO-INPUT alternative */
 .radio_input {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   display: flex;
 }
 
@@ -296,12 +304,28 @@ body {
 
   .form .rowForm {
     flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
+  }
+
+  .form .colForm {
+    margin-right: 0;
   }
 
   .form .textForm {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+}
+
+@media screen and (min-width: 769px) and  (max-width: 975px) {
+
+  .form .textForm label {
+    flex-basis: 40%;
+  }
+
+  .form .textForm .textInput {
+    flex-basis: 50%;
   }
 }
 
@@ -311,10 +335,10 @@ body {
     flex-wrap: nowrap;
   }
 
+
   .form .textForm {
     flex-direction: column;
   }
-
 }
 
 @media screen and (max-width: 576px) {
@@ -374,6 +398,6 @@ body {
   }
 
   .radio_input {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }

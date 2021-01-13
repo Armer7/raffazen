@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'OCRF-RegularC';
-  src: local('OCRF-RegularC'), local('OCRF-RegularC'),
+  src: local('OCRF-RegularC'),
   url('../fonts/OCRF-RegularC.otf') format('opentype');
   font-style: normal;
 }
